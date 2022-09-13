@@ -32,9 +32,9 @@ canvas.addEventListener("mouseup", function (event) {
 
 //============= Player method ===========
 const playerLeft = new Image();
-playerLeft.src = "multi/fsprite-left.png";
+playerLeft.src = "./multi/fsprite-left.png";
 const playerRight = new Image();
-playerRight.src = "multi/fsprite-right.png";
+playerRight.src = "./multi/fsprite-right.png";
 class Player {
   constructor() {
     this.x = canvas.width / 2; // player strats at the center of canvas and moves by the mouse coordinates
@@ -111,7 +111,7 @@ const player = new Player();
 const balloonsArray = [];
 const balloonImage = new Image();
 
-balloonImage.src = "multi/Ballpop/blue-balloon/1.png";
+balloonImage.src = "./multi/Ballpop/blue-balloon/1.png";
 class Balloon {
   constructor() {
     this.x = Math.random() * canvas.width;
@@ -151,9 +151,9 @@ class Balloon {
 }
 //assiging audio effect
 const poppedSound = document.createElement("audio");
-poppedSound.src = "multi/balloon_pop.ogg";
+poppedSound.src = "./multi/balloon_pop.ogg";
 const poppedSound2 = document.createElement("audio");
-poppedSound2.src = "multi/balloon_pop.mp3";
+poppedSound2.src = "./multi/balloon_pop.mp3";
 
 function createBalloons() {
   if (gameFrame % 90 == 0) {
@@ -203,7 +203,7 @@ function createBalloons() {
 
 //===== Background image
 const background = new Image();
-background.src = "multi/backg1.jpg";
+background.src = "./multi/backg1.jpg";
 
 const BG = {
   x1: 0,
