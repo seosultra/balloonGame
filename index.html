@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>Hello</p>
-    <canvas id="canvas"></canvas>
-    <script src="./main.js"></script>
+    <h3>Use your mouse to pop the ballons with no cat</h3>
+    <div id="start-screen" class="screen">
+      <button>Play Game</button>
+    </div>
+    <div id="game-screen" class="screen" style="display: none">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div id="game-over-screen" class="screen" style="display: none">
+      <h2>Game Over</h2>
+      <button>Play Again</button>
+    </div>
+
+    <!--<script src="game.js"></script>-->
+    <script src="balloons.js"></script>
+    <script src="player.js"></script>
+    <script src="enemy.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

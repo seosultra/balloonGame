@@ -7,13 +7,27 @@
 body {
   width: 100vw;
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../multi/Mbackg.jpg);
+}
+
+h3 {
+  flex-flow: flex-end;
+  color: black;
 }
 
 #canvas {
   width: 800px;
   height: 500px;
   border: 4px solid;
+}
+.screen {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
 }
