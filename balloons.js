@@ -11,7 +11,7 @@ class Balloon {
     this.x = Math.random() * (canvas.width - 50 - 29) + 29; //(canvas.width + 25);
     this.y = canvas.height + 100;
     this.radius = 25; //all balloons same seize
-    this.speed = Math.random() * 2 + 0.5; // random speed between 1 and 3
+    this.speed = Math.random() * 3 + 1; // random speed between 1 and 3
     this.distance = 0.001; //between balloon & player
     this.counted = false; // to not count at first for score/collission
     this.sound = Math.random() <= 0.5 ? "sound1" : "sound2";
